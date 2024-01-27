@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E N C H A N T E D</title>
+    <title>E N C H A N T E D </title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <style>
         body {
@@ -16,8 +16,7 @@
             background-color: var(--dark-blue);
             color: var(--text-color);
             font-family: 'Sofia', sans-serif; 
-            margin: 0; 
-            transition: background-color 0.5s; /* adds a smooth transition effect */
+            margin: 0; /* Remove default margin */
         }
 
         header {
@@ -51,7 +50,6 @@
             border-bottom-width: 0.3rem;
             border-bottom-style: solid;
             border-color: var(--light-blue);
-            cursor: pointer; 
         }
 
         a:hover {
@@ -66,7 +64,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh; 
-            position: relative; 
+            position: relative; /* Make it a positioned container */
         }
 
         .center-container img {
@@ -77,8 +75,8 @@
 
         .sparkles {
             position: absolute;
-            font-size: 3rem; 
-            color: #FFD700; 
+            font-size: 3rem; /* Adjust the size of the sparkles */
+            color: #FFD700; /* Set the color of the sparkles */
         }
 
         .sparkles.top-left {
@@ -108,10 +106,10 @@
     </header>
 
     <nav>
-        <a href="food.html" onclick="changeBackgroundColorAndNavigate('gold', 'food.html')"> food </a>
-        <a href="disney_characters.html" onclick="changeBackgroundColorAndNavigate('gold', 'disney_characters.html')"> disney characters </a>
-        <a href="outfits.html" onclick="changeBackgroundColorAndNavigate('gold', 'outfits.html')">disney ootd</a>
-        <a href="rides.html" onclick="changeBackgroundColorAndNavigate('gold', 'rides.html')">rides</a>
+        <a href="food.html"> food </a>
+        <a href="disney_characters.html"> disney characters </a>
+        <a href="outfits.html">disney ootd</a>
+        <a href="rides.html">rides</a>
     </nav>
 
     <div class="center-container">
@@ -121,19 +119,7 @@
         <div class="text-box">
             <p>Welcome to Elizabeth and Elleanna's Disney Adventures Blog! As a full-time college student and mom, I have a hectic schedule, but the one thing that keeps my daughter and I super close and bonded is our love for Disney. This blog serves as a digital diary for our Disney trips together and includes insights on things such as our favorite rides, our growing Disney ear collection, our favorite Disney foods, Liz's favorite Disney outfits, and a digital scrapbook of Liz with her favorite Disney characters!  </p>
         </div>
-        <div class="sparkles" style="bottom: 0; left: 0;">&#10024;</div>
     </div>
-
-    <script>
-        // javascript function to change the background color and navigate to the linked page
-        function changeBackgroundColorAndNavigate(color, link) {
-            document.body.style.setProperty('--dark-blue', color);
-            setTimeout(function () {
-                window.location.href = link;
-            }, 500); // adds a delay for the transition effect
-        }
-    </script>
 
 </body>
 </html>
-
