@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E N C H A N T E D </title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <style>
         body {
@@ -16,7 +17,7 @@
             background-color: var(--dark-blue);
             color: var(--text-color);
             font-family: 'Sofia', sans-serif; 
-            margin: 0; /* Remove default margin */
+            margin: 0;
         }
 
         header {
@@ -64,7 +65,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh; 
-            position: relative; /* Make it a positioned container */
+            position: relative; 
         }
 
         .center-container img {
@@ -73,21 +74,7 @@
             margin-bottom: 20px; 
         }
 
-        .sparkles {
-            position: absolute;
-            font-size: 3rem; /* Adjust the size of the sparkles */
-            color: #FFD700; /* Set the color of the sparkles */
-        }
-
-        .sparkles.top-left {
-            top: 0;
-            left: 0;
-        }
-
-        .sparkles.top-right {
-            top: 0;
-            right: 0;
-        }
+    
 
         .text-box {
             background-color: var(--light-blue); 
@@ -98,6 +85,46 @@
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Walt+Disney&display=swap" rel="stylesheet">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            createStarshine();
+        });
+    
+        function createStarshine() {
+            const numberOfStars = 50; 
+            const body = document.body;
+    
+            for (let i = 0; i < numberOfStars; i++) {
+                createStar();
+            }
+    
+            function createStar() {
+                const star = document.createElement("div");
+                star.className = "star";
+                const size = Math.random() * 4; 
+                const duration = Math.random() * 1 + 0.5; 
+    
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                star.style.animationDuration = `${duration}s`;
+    
+                const randomX = Math.random() * window.innerWidth;
+                const randomY = Math.random() * window.innerHeight;
+    
+                star.style.left = `${randomX}px`;
+                star.style.top = `${randomY}px`;
+    
+                body.appendChild(star);
+    
+                star.addEventListener("animationiteration", () => {
+                    star.style.left = `${Math.random() * window.innerWidth}px`;
+                    star.style.top = `-${size}px`;
+                });
+            }
+        }
+    </script>
+
 </head>
 <body>
 
@@ -113,9 +140,7 @@
     </nav>
 
     <div class="center-container">
-        <div class="sparkles top-left">&#10024;</div>
         <img src="lizandi.jpg" WIDTH=700 HEIGHT=400>
-        <div class="sparkles top-right">&#10024;</div>
         <div class="text-box">
             <p>Welcome to Elizabeth and Elleanna's Disney Adventures Blog! As a full-time college student and mom, I have a hectic schedule, but the one thing that keeps my daughter and I super close and bonded is our love for Disney. This blog serves as a digital diary for our Disney trips together and includes insights on things such as our favorite rides, our growing Disney ear collection, our favorite Disney foods, Liz's favorite Disney outfits, and a digital scrapbook of Liz with her favorite Disney characters!  </p>
         </div>
@@ -123,3 +148,4 @@
 
 </body>
 </html>
+
