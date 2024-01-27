@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E N C H A N T E D </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        body {
+            --dark-blue: #000f61;
+            --light-blue: #2E99EA;
+            --gold: #F5CB5C;
+            --text-color: #F5F5F5;
+            --text-color-2: #FFAAEA;
+            text-align: center;
+            background-color: var(--dark-blue);
+            color: var(--text-color);
+            font-family: 'Sofia', sans-serif; 
+            margin: 0; /* Remove default margin */
+        }
+
+        header {
+            margin: 20px 0; 
+            color: var(--gold);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--light-blue); 
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+        }
+
+        a {
+            padding: 0.7rem 80px; 
+            padding-top: 1rem;
+            text-decoration: none; 
+            color: var(--text-color); 
+            transition: opacity 0.5s, border 0.8s, background-color 0.5s;
+            opacity: 0.7;
+            border-bottom-width: 0.3rem;
+            border-bottom-style: solid;
+            border-color: var(--light-blue);
+        }
+
+        a:hover {
+            opacity: 1;
+            background-color: var(--text-color-2);
+            border-color: var(--text-color);
+        }
+
+        .center-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            position: relative; /* Make it a positioned container */
+        }
+
+        .center-container img {
+            max-width: 100%;
+            max-height: 100%;
+            margin-bottom: 20px; 
+        }
+
+        .sparkles {
+            position: absolute;
+            font-size: 3rem; /* Adjust the size of the sparkles */
+            color: #FFD700; /* Set the color of the sparkles */
+        }
+
+        .sparkles.top-left {
+            top: 0;
+            left: 0;
+        }
+
+        .sparkles.top-right {
+            top: 0;
+            right: 0;
+        }
+
+        .text-box {
+            background-color: var(--light-blue); 
+            padding: 20px;
+            max-width: 80%;
+            text-align: center;
+            line-height: 1.8rem;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Walt+Disney&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>E N C H A N T E D</h1>
+    </header>
+
+    <nav>
+        <a href="food.html"> food </a>
+        <a href="disney_characters.html"> disney characters </a>
+        <a href="outfits.html">disney ootd</a>
+        <a href="rides.html">rides</a>
+    </nav>
+
+    <div class="center-container">
+        <div class="sparkles top-left">&#10024;</div>
+        <img src="lizandi.jpg" WIDTH=700 HEIGHT=400>
+        <div class="sparkles top-right">&#10024;</div>
+        <div class="text-box">
+            <p>Welcome to Elizabeth and Elleanna's Disney Adventures Blog! As a full-time college student and mom, I have a hectic schedule, but the one thing that keeps my daughter and I super close and bonded is our love for Disney. This blog serves as a digital diary for our Disney trips together and includes insights on things such as our favorite rides, our growing Disney ear collection, our favorite Disney foods, Liz's favorite Disney outfits, and a digital scrapbook of Liz with her favorite Disney characters!  </p>
+        </div>
+    </div>
+
+</body>
+</html>
