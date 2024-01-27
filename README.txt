@@ -12,5 +12,6 @@ minor details such as linking buttons to different html pages and box shadowing
 when hovering over these links.
 
 Javascript was used to create a box shadow effect when mouse hovers over navigation bar
-links and creates a "delay" in loading the page to get that transition like effect. There
-is no separate javascript file, code was just embedded in the index.html file.
+links and creates a "delay" in loading the page to get that transition like effect, and
+while it is very hard to see, there is a glitter effect in the background of the website's
+homepage.
